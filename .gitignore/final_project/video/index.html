@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Final Project</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Checkout Database Project</a>
+            </div>
+            
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    
+                   <li>
+                        <a href="employees.php"><i class="fa fa-fw fa-file"></i> Employees</a>
+                    </li>
+                    <li>
+                        <a href="students.php"><i class="fa fa-fw fa-file"></i> Students</a>
+                    </li>
+                    <li>
+                        <a href="items.php"><i class="fa fa-fw fa-dashboard"></i> Items</a>
+                    </li>
+                    <li>
+                        <a href="logout.php"><i class="fa fa-fw fa-dashboard"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Mizzou Checkout Center <small>Information Overview</small>
+                        </h1>
+                        
+                    </div>
+                </div>
+                <!-- /.row -->
+
+               
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-comments fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">26</div>
+                                        <div>Items</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="items.php">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-tasks fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">12</div>
+                                        <div>Students</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="students.php">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-shopping-cart fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">124</div>
+                                        <div>Employees Online</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="employees.php">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-support fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">13</div>
+                                        <div>OverDue Items</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                    
+                    <div class="col-lg-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                        
+                                <?php    
+                                $conn = mysqli_connect("localhost", "root", "O11c3095", "final") or die ("Error 1" . mysqli_error($conn));
+                                if($stmt = mysqli_prepare($conn, "SELECT * FROM student AS s WHERE EXISTS(SELECT * from banned as b Where s.id = b.id)")){
+                                mysqli_stmt_bind_param($stmt, 's', htmlspecialchars($searcher));
+                                mysqli_stmt_execute($stmt);
+                                mysqli_stmt_bind_result($stmt, $obj_field);
+                                call_user_func_array(array($sec, "bind_result"), $setter);
+
+                                $data = $stmt->result_metadata();
+                                while($fetcher = $data->fetch_field()){
+                                    $answer[] = &$row[$fetcher->name];
+                                }
+
+                                call_user_func_array(array($stmt, 'bind_result'), $answer);
+
+                                while($stmt->fetch()){
+                                    foreach($row as $c=> $num){
+                                            $section[$c]=$num;
+                                    }
+
+                                    $ans[] = $section;
+                                }
+
+                                $arraylist = array("b.id", "s.username", "s.email", "s.name_first","s.name_last");
+                                echo '<table class = "table table-hover">';
+                                echo '<table class = "table table-hover">';
+                                    echo '<tr><th></th><th></th>';
+                                    foreach($arraylist AS $col){
+                                        echo '<th>' . $col . '</th>';
+                                    }
+
+                                    echo '</tr>';
+                                $number = 0;
+                                $i = 0;
+
+                                foreach($ans AS $row){
+                                    echo '<form action = "editStudent.php" method = "POST"><tr>';
+                                    echo '<td><button type = "submit" class = "btn btn-info" name = "edit">Edit</button></td>';
+                                    echo '<td><button type = "submit" class = "btn btn-danger" name = "delete">Delete</button></td>';
+
+                                    foreach($row AS $area){
+                                        echo '<td>' . $area . '</td>';
+                                        echo "<input type = 'hidden' name = $arraylist[$i] value = $area>";
+                                        $i++;
+                                    }
+
+                                    echo '</tr>';
+                                        $number++;
+                                    $i=0;
+                                    echo '</form>';
+
+                                }
+
+                                echo '</table><h1>' . $number . ' Rows</h1>';
+                            }
+                            ?>
+
+                                </div>
+                                <div class="text-right">
+                                    <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
+
+
+

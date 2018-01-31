@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment 5</title>
+            <script>
+                
+                function launch(){
+                var text = document.getElementById('html');
+                console.log(text.value);
+                //var pane = document.getElementById('css');
+                //console.log(pane.value);
+                var preview = document.getElementById('box');    
+                preview.innerHTML = text.value;
+                }
+                
+                var thing = 0;
+                function toggle(){
+                    var html1 = document.getElementById('html');
+                    var css1 = document.getElementById('css');
+                    var box1 = document.getElementById('box');
+                    var sty = document.getElementById('style1');
+                   // console.dir(sty);
+                 //   console.dir(css1);
+                    /*var style1 = document.createElement('css');
+                    style1.type = text/"css";
+                    style1.styleSheet.cssText = css1;
+                    document.getElementById("head")[0].appendChild(css1)*/
+                    if(thing % 2 == 0){
+                        sty.innerHTML = css1.value;
+                        thing++;
+                        console.log("you are in the if");
+                    }
+                    else{
+                        sty.innerHTML = null;
+                        thing++;
+                        console.log("you are in the else");
+                    }
+                
+                }
+                function clear1(){
+                var html1 = document.getElementById('html');
+                var css1 = document.getElementById('css');
+                var box1 = document.getElementById('box');
+                    html1.value = null;
+                    css1.value = null;
+                    box1.value = null;
+                box1.innerHTML = html1.value;
+                }
+              
+            </script>
+            <style>
+                #box{
+                    border: 2px solid black;
+                    width: 500px;
+                    height: 200px;
+                }
+                #css{
+                    width: 500px;
+                    height: 200px;
+                } 
+                #html{
+                    width: 500px;
+                    height: 200px;
+                }
+            </style>
+            <style id ="style1"></style>
+    </head>
+    <body>
+        <form action = "#" method = "POST">
+            <h3>HTML</h3>
+            <div>
+                <textarea id="html" name="html"></textarea>
+            </div>
+            
+            <h3>CSS</h3>
+            <div>
+                <textarea id="css" name="css"></textarea>
+            </div>
+            
+            <h3>Result</h3>
+            <div id ="box"></div>
+            
+            <button type="button" onclick="launch()">launch</button>
+            <button type="button" onclick="toggle()">toggle</button>
+            <button type="button" onclick="clear1()">clear</button>
+        </form>
+    </body>
+</html>

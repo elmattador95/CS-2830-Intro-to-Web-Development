@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>matthew schwarz</title>
+        <style>
+            * {
+                box-sizing:border-box;
+            }
+            .wrap {
+                margin:0 10%;
+                -webkit-perspective-origin: 50% 10%;
+                -webkit-perspective: 200px;
+                height:100%;
+            }
+
+            .scroll {
+                -webkit-transform:rotateX(90deg);
+                color:#ffd326;
+                font-size:20px;
+            }
+
+            .content {
+                height: 900px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                width: 600px;
+                color:#ffd326;
+                margin:0 auto;
+            }
+
+            ::-webkit-scrollbar {
+                display:none;
+            }
+            body {
+                margin: 0px;
+                padding: 0px;
+                height: 100%;
+                width: 100%;
+                background-color: #000;
+                background-image: url("https://i.ytimg.com/vi/voWpbz1De_M/maxresdefault.jpg");
+                background-size: cover;
+  
+                font-family: "Droid Sans", serif;
+                color: white;
+            }
+
+            #black {
+                width: 100%;
+                height: 100%;
+                background: #000;
+                position: absolute;
+                z-index: 99;
+                animation: fadeOutBlack .1s;
+                -webkit-animation: fadeOutBlack .1s;
+                -moz-animation: fadeOutBlack .1s;
+                -o-animation: fadeOutBlack .1s;
+                animation-delay: 7s;
+                -webkit-animation-delay: 7s;
+                -moz-animation-delay: 7s;
+                -o-animation-delay: 7s;
+                animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                -o-animation-fill-mode: forwards;
+            }
+
+            @keyframes fadeOutBlack {
+                0% {opacity: 1;}
+                100% {opacity: 0;}
+            }
+
+            #longTimeAgo {
+                color: #33ccff;
+                font-size: 200%;
+                width: 14em;
+                height: 22%;
+                margin: auto;
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                z-index: 100;
+                animation: fadeOutLongTime 1s;
+                -webkit-animation: fadeOutLongTime 1s;
+                -moz-animation: fadeOutLongTime 1s;
+                -o-animation: fadeOutLongTime 1s;
+                animation-delay: 4s;
+                -webkit-animation-delay: 4s;
+                -moz-animation-delay: 4s;
+                -o-animation-delay: 4s;
+                animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                -o-animation-fill-mode: forwards;
+            }
+
+            @keyframes fadeOutLongTime {
+                0% {opacity: 1;}
+                100% {opacity: 0;}
+            }
+
+            #logo {
+                width: 170%;
+                top:0px;
+                right:0px;
+                margin-right: 0px;
+                left:0px;
+                margin-left: 0px;
+                overflow: auto;
+                margin: auto;
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                z-index: -10;
+  
+                animation: logoScroll 12s;
+                -webkit-animation: logoScroll 12s;
+                -moz-animation: logoScroll 12s;
+                -o-animation: logoScroll 12s;
+                animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+                -o-animation-delay: 5s;
+                animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                -o-animation-fill-mode: forwards;
+            }
+
+            @-webkit-keyframes logoScroll {
+                0% {width: 125%; opacity: 1;}
+                25% {opacity: 1;}
+                50% {opacity: 1;}
+                70% {opacity: 1;}
+                100% {width: 0%; opacity:0;}
+            }
+             img {
+                width:100%;
+                position: relative;
+                margin:0 auto;
+            }
+  
+        </style>
+ 
+    </head>
+    <body>
+        <script>
+            setTimeout(function(){
+            document.getElementById("sound_element").innerHTML= '<embed src="01 Star Wars (Main Title).mp3" width="180" height="90" loop="false" autostart="false" hidden="true"   />' 
+            },6400);
+        </script>
+        <div id="black">
+            <p id="longTimeAgo">A long time ago in a galaxy far, <br>far away...</p>
+        </div>
+
+            <div id="logo">
+                <img src="starwars.gif">
+            </div>
+   
+        <div class="wrap">
+            <div class="scroll">
+                <div class="content">
+        <marquee behavior="scroll" direction="up" scrollamount="1" style="height:600px;">
+            <div id="sound_element" autostart="setTimeout()"></div>
+            <font size = "6">
+        <p>Introducing His grand imperial magesty, sir matthew amadaeus schwarz of the southern isles. Now who is this man one may ask? some describe his as revolutionary, inspiring, and stunning. with his vast knowlege in multiple subjects, his amazing achievemnets, and his strikingly good looks, living up to his standards are nearly impossible.</p>
+
+        <p>Matthew Scwarz is experienced in many fields, including astrophysics, thermodynamics, quantum theory, aerospace engineering, computer science, microbiology, organic chemistry, and basiclly everything else. just think to yourself "I wonder if Matthew is an expert in (insert field here)" the awnser is most likley yes. </p>
+
+        <p>Some of his awards he was granted are 6 oscars, 4 grammys, 3 golden globes, the heisman trophy, the nobel peace prize, and the medal of honor. Some of Matthew's lesser known feats are, but not limited to, curing cancer, solving world hunger, ending the war in afganistan, winning the coney island hotdog eating contest, and introducing third world countries to primitive technologies to further their lives. Have you ever heard of the great alien invasion of 2014? well thanks to Matthew Schwarz it never happened. Have you ever wondered why cats are so adorable, puppies are so fluffy, and babies are so cute, well that's because Matthew Schwarz made it that way. almost everything important is in some way linked to him.</p>
+
+            </font>
+
+        </div>
+        </div>
+        
+    </marquee>
+        
+    </body>
+ </html>   
